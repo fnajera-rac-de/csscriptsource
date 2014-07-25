@@ -189,7 +189,7 @@
     </PreBuildEvent>
     <PostBuildEvent>echo off
 
-if "%25CS-S_DEV_ROOT%25" == "" go exit
+if "%25CS-S_DEV_ROOT%25" == "" goto exit
 echo ------------------------------
 echo Updating local deployment folder "%25CS-S_DEV_ROOT%25"
 copy "$(TargetPath)" "%25CS-S_DEV_ROOT%25\Lib"
