@@ -727,9 +727,6 @@ namespace CSScriptLibrary
                     foreach (string file in importedFile.Precompilers)
                         PushPrecompiler(file);
 
-                    foreach (string file in importedFile.IgnoreNamespaces)
-                        PushIgnoreNamespace(file);
-
                     foreach (ScriptInfo scriptFile in importedFile.ReferencedScripts)
                         ProcessFile(scriptFile);
 
